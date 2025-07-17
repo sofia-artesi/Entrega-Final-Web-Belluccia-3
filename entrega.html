@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Artesi - UvaClub</title>
+    <link rel="icon" href="iconovino.png" type="image/png">
+    <link rel="shortcut icon" href="iconovino.png" type="image/png">
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xke5fdq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="entrega.html">UvaClub</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#conocenos">Conocenos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#funcion">Como Funciona</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section id="inicio" class="section-spacing bg-cover" style="background-image: url('imagenes/fondoherouno.png');">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h1 class="h1-custom">OTRO MES <br>OTRO VINO</h1>
+        <p class="p-custom" style="color: #EEECE8;">Llega a tu casa cada mes un box con vinos seleccionados, maridajes perfectos y fichas de cata que elevan tu momento.</p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="plan.html" class="btn btn-dark">CONOCER MÁS</a>
+        </div>
+      </div>
+      <!-- Imagen -->
+      <div id="servicios" class="col-lg-6 text-center">
+        <img src="imagenes/fotoherouno.png" class="img-fluid img-rounded" alt="Imagen Hero" style="max-width: 500px;">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section  data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine" id="conocenos" class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imagenes/historia.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #4A1F2F";>Conocenos Mejor</p>
+      <h2 class="h2-custom" style="color: #4A1F2F;">UVACLUB:<br>LA HISTORIA</h2>
+      <p class="p-custom">UvaClub se creo con la idea de facilitar en un solo click el acceso a cientos de variedades de vinos de todo el mundo para llevarlas a la puerta de tu casa, gracias a nuestros box.</p>
+      <a href="plan.html" class="btn btn-outline-primary mt-3">CONOCER MÁS</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
+<section id="nosotros" class="section-spacing container-fluid text-center py-5 bg-nosotros">  
+  <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #4A1F2F";>Los valores de UvaClub</p>
+  <h2 class="h2-custom mb-5" style="color: #4A1F2F;">NOSOTROS</h2>
+
+  <div class="row align-items-start text-center">
+    <!-- Item 1 -->
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0" class="col-md-4 mb-4">
+      <img src="imagenes/botella nosotros.png" alt="Icono Calidad" class="mb-3 icon-nosotros">
+      <h5 class="fw-bold text-nosotros-title mb-3">Calidad</h5>
+      <p class="p-custom">Nuestros sommeliers profesionales se encargan de seleccionar los mejores vinos.</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0" class="col-md-4 mb-4">
+      <img src="imagenes/copanosotros.png" alt="Icono Diversidad" class="mb-3 icon-nosotros">
+      <h5 class="fw-bold text-nosotros-title mb-3">Diversidad</h5>
+      <p class="p-custom">Cada mes recibí en tu box vinos de distintas regiones del mundo.</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="col-md-4 mb-4">
+      <img src="imagenes/uvasnosotros.png" alt="Icono Comunidad" class="mb-3 icon-nosotros">
+      <h5 class="fw-bold text-nosotros-title mb-3">Comunidad</h5>
+      <p class="p-custom">Compartí tu experiencia con el resto de la comunidad UvaClub.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<section id="funcion" class="section-spacing container">
+  <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="300" data-aos-duration="300" class="row align-items-center">
+    
+    <!-- Columna de texto -->
+    <div class="col-lg-6 text-start">
+      <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #4A1F2F";>El paso a paso</p>
+      <h2 class="h2-custom mb-4" style="color: #4A1F2F";>COMO FUNCIONA</h2>
+
+      <ol class="list-unstyled pasos-lista mb-4">
+        <li>1. Elegí tu suscripción</li>
+        <li>2. Seleccioná tu método de pago y envío</li>
+        <li>3. Te lo enviamos</li>
+        <li>4. Disfrutá de tu Box</li>
+      </ol>
+
+      <a href="plan.html" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-bold">CONOCER MÁS</a>
+    </div>
+
+    <!-- Columna de imagen SIN curva -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="imagenes/fotocomofunciona.png" alt="Bodega" class="img-fluid w-100">
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+
+<!-- PLANES DE SUSCRIPCIÓN -->
+<section id="planes" class="section-spacing container-fluid text-center bg-planes">
+  <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #E0D5BF;">Descubrí tu Box ideal</p>
+  <h2 class="h2-custom" style="color: #E0D5BF;">SUSCRIPCIONES</h2>
+
+  <div class="row mt-5 justify-content-center">
+
+    <!-- PLAN: Alta Gama -->
+    <div data-aos="zoom-in" class="col-md-4 mb-5 d-flex justify-content-center">
+      <div class="plan-card p-4 text-center">
+        <div class="img-wrapper mb-4">
+          <img src="imagenes/boxaltagama.png" alt="Box Alta Gama" class="img-fluid img-rounded mx-auto d-block" style="max-width: 220px;">
+        </div>
+        <h5 class="text-white subrayado-dorado">Alta Gama</h5>
+        <p class="price-plan mb-3">$49.000 <small>/mes</small></p>
+        <p class="text-white small mb-3">Perfecta para los que recién empiezan.</p>
+        <ul class="list-unstyled lista-beneficios text-white text-start mx-auto small mb-4" style="max-width: 300px;">
+          <li>√ Dos vinos Malbec.</li>
+          <li>√ Maridaje Alta Gama.</li>
+          <li>√ Una ficha de cata.</li>
+          <li>√ Guía sobre vinos Malbec.</li>
+          <li>√ 10% de descuento en envíos.</li>
+        </ul>
+        <a href="plan.html" class="btn btn-light btn-suscripcion w-100 rounded-pill fw-bold">SUSCRIBIRME</a>
+      </div>
+    </div>
+
+    <!-- PLAN: Sommelier -->
+    <div data-aos="zoom-in" class="col-md-4 mb-5 d-flex justify-content-center">
+      <div class="plan-card p-4 text-center">
+        <div class="img-wrapper mb-4">
+          <img src="imagenes/boxsommelier.png" alt="Box Sommelier" class="img-fluid img-rounded mx-auto d-block" style="max-width: 220px;">
+        </div>
+        <h5 class="text-white subrayado-dorado">Sommelier</h5>
+        <p class="price-plan mb-3">$55.000 <small>/mes</small></p>
+        <p class="text-white small mb-3">Perfecta para los exploradores.</p>
+        <ul class="list-unstyled lista-beneficios text-white text-start mx-auto small mb-4" style="max-width: 300px;">
+          <li>√ Dos vinos Malbec y uno Blanco.</li>
+          <li>√ Maridaje Sommelier.</li>
+          <li>√ Una ficha de cata.</li>
+          <li>√ 10% de descuento en vinotecas asociadas.</li>
+          <li>√ 20% de descuento en envíos.</li>
+        </ul>
+        <a href="plan.html" class="btn btn-light btn-suscripcion w-100 rounded-pill fw-bold">SUSCRIBIRME</a>
+      </div>
+    </div>
+
+    <!-- PLAN: Premium -->
+    <div data-aos="zoom-in" class="col-md-4 mb-5 d-flex justify-content-center">
+      <div class="plan-card p-4 text-center">
+        <div class="img-wrapper mb-4">
+          <img src="imagenes/boxpremium.png" alt="Box Premium" class="img-fluid img-rounded mx-auto d-block" style="max-width: 220px;">
+        </div>
+        <h5 class="text-white subrayado-dorado">Premium</h5>
+        <p class="price-plan mb-3">$65.000 <small>/mes</small></p>
+        <p class="text-white small mb-3">Para los expertos en vinos.</p>
+        <ul class="list-unstyled lista-beneficios text-white text-start mx-auto small mb-4" style="max-width: 300px;">
+          <li>√ Dos vinos Malbec, uno Blanco y un Rosado.</li>
+          <li>√ Maridaje Premium.</li>
+          <li>√ Una ficha de cata.</li>
+          <li>√ Recetario y recomendaciones de comidas.</li>
+          <li>√ 30% de descuento en envíos.</li>
+        </ul>
+        <a href="plan.html" class="btn btn-light btn-suscripcion w-100 rounded-pill fw-bold">SUSCRIBIRME</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<!-- GALERÍA DESLIZANTE CONTINUA -->
+<section class="py-5 overflow-hidden">
+  <div class="slider d-flex align-items-center">
+    <div class="slide-track d-flex">
+      <!-- Repetí las imágenes para hacer loop visual -->
+      <img src="imagenes/bodegacuatro.png" class="mx-3" alt="Logo 1">
+      <img src="imagenes/bodegatres.png" class="mx-3" alt="Logo 2">
+      <img src="imagenes/bodegados.png" class="mx-3" alt="Logo 3">
+      <img src="imagenes/bodegauno.png" class="mx-3" alt="Logo 4">
+      <img src="imagenes/bodegacuatro.png" class="mx-3" alt="Logo 5">
+      <img src="imagenes/bodegatres.png" class="mx-3" alt="Logo 6">
+      <!-- Duplicado para efecto continuo -->
+      <img src="imagenes/bodegados.png" class="mx-3" alt="Logo 1">
+      <img src="imagenes/bodegauno.png" class="mx-3" alt="Logo 2">
+      <img src="imagenes/bodegacuatro.png" class="mx-3" alt="Logo 3">
+      <img src="imagenes/bodegatres.png" class="mx-3" alt="Logo 4">
+      <img src="imagenes/bodegados.png" class="mx-3" alt="Logo 5">
+      <img src="imagenes/bodegauno.png" class="mx-3" alt="Logo 6">
+    </div>
+  </div>
+</section>
+
+<style>
+.slider {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.slide-track {
+  animation: scroll 30s linear infinite;
+}
+.slide-track img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+<!-- SECCIÓN BENEFICIOS CON IMAGEN REDONDEADA -->
+<section class="section-spacing container">
+  <div class="row justify-content-center">
+    
+    <!-- Card 1 -->
+    <div data-aos="zoom-in" class="col-md-6 mb-4">
+      <div class="curved-card h-100 text-start">
+        <div class="curved-card-image">
+          <img src="imagenes/wineswap.png" alt="Imagen 1" class="w-100">
+        </div>
+        <div class="p-4">
+          <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #4A1F2F";>LAS VENTAJAS DEL</p>
+          <h2 class="h2-custom mb-3" style="color: #4A1F2F">Wine Swap</h2>
+          <p class="p-custom">¿Te llegó algún vino repetido? No te preocupes, con nuestro programa Wine Swap, podés intercambiarlo con miembros de la comunidad UvaClub.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div data-aos="zoom-in" class="col-md-6 mb-4">
+      <div class="curved-card h-100 text-start">
+        <div class="curved-card-image">
+          <img src="imagenes/buenmaridaje.png" alt="Imagen 2" class="w-100">
+        </div>
+        <div class="p-4">
+          <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #4A1F2F";>LA IMPORTANCIA</p>
+          <h2 class="h2-custom mb-3" style="color: #4A1F2F">Un buen maridaje</h2>
+          <p class="p-custom">¿Querés saber por qué acompañamos cada uno de nuestros box con un maridaje distinto? En UvaClub la experiencia gustativa es completa con cada una de nuestras box.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQS: Preguntas frecuentes -->
+<section id="faq" class="section-spacing text-center">
+  <div class="container p-5" style="background-color: #EEECE8; border-radius: 16px;">
+    <p class="text-uppercase text-muted-custom mb-2 subrayado-dorado" style="color: #4A1F2F;">si tenes dudas</p>
+    <h2 class="h2-custom mb-4" style="color: #4A1F2F;">Preguntas Frecuentes</h2>
+
+    <div class="faq-list d-grid gap-3 text-start">
+
+      <div class="faq-item">
+        <button class="faq-question">¿Puedo cambiar de plan en cualquier momento?</button>
+        <div class="faq-answer">Sí, podés cambiar de plan desde tu cuenta en cualquier momento antes del próximo envío.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cuáles son sus medios de pago?</button>
+        <div class="faq-answer">Aceptamos tarjetas de crédito, débito, y pagos por MercadoPago.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Puedo cancelar mi suscripción en cualquier momento?</button>
+        <div class="faq-answer">Obvio. Podés cancelarla sin penalidad desde tu cuenta cuando quieras.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cuáles son los medios de envío y cuánto tardan?</button>
+        <div class="faq-answer">Enviamos con correo privado. Los envíos tardan entre 2 y 5 días hábiles según la zona.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /FAQS -->
+
+<!-- FOOTER: Pie de página -->
+<footer class="bg-light text-dark py-5">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Logo -->
+      <div class="col-md-3">
+        <h4 class="fw-bold text-gold">UvaClub</h4>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Conocenos</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-secondary">Nuestra Historia</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Equipo</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Bodega</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Contacto</h6>
+        <ul class="list-unstyled">
+          <li><span class="text-secondary">Email:</span> contacto@uvaclub.com</li>
+          <li><span class="text-secondary">Tel:</span> +54 9 11 1234 5678</li>
+        </ul>
+      </div>
+
+      <!-- Redes -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Redes</h6>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Línea + créditos -->
+    <hr class="my-4">
+    <div class="text-center small text-secondary">
+      © 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>  
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
